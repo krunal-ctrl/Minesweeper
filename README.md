@@ -5,4 +5,5 @@ Minesweeper is an oldschool game that dates back to the earliest mainframe games
 
 I am trying to build this using Rect-JS, HTML, CSS..
 
--[First Stage](https://github.com/krunal-ctrl/Minesweeper/tree/main/Minesweeper%20is%20loading)
+
+### APP is almost done just few UI chages needed 😎
