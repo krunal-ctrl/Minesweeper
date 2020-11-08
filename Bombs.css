@@ -1,0 +1,44 @@
+.Bombs {
+    margin-top: 1rem;
+}
+
+.Bombs .Row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.Bombs .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    line-height: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.cell.closed {
+}
+
+.cell.opened {
+    border: 1px solid red;
+    box-shadow: 0 0 2px 2px red;
+    background-color: #555555;
+}
+
+.cell.flagged {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cell.flagged.flag {
+    background-image: url("./target.svg");
+}
+
+.cell.flagged.mine {
+    background-color: orangered;
+    border: 2px solid red;
+    background-image: url("./fired.svg");
+}

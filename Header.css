@@ -1,0 +1,29 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+
+.Header > img {
+    height: 2rem;
+    pointer-events: none;
+    animation: bomb-spin infinite 20s linear;
+}
+
+.Header .title {
+    font-size: 2rem;
+    display: inline-block;
+    height: 2rem;
+    line-height: 1;
+    margin-right: 1rem;
+}
+
+@keyframes bomb-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

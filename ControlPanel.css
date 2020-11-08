@@ -1,0 +1,11 @@
+.Control {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.Control .flagCounter > img {
+    width: 1rem;
+    color: #555;
+}

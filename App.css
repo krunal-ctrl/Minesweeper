@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+.App::before{
+    content: "";
+    display: table;
+}
+
+.App .box {
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    box-shadow: 0 0 4px 2px red;
+    padding: 1rem;
+}
