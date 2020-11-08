@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./Header";
 import ControlPanel from "./ControlPanel";
@@ -9,19 +9,20 @@ function App() {
     const cellColumns = 8;
     const _cells = [];
 
-    for (let i =0; i < cellRows; i++) {
+    for (let i = 0; i < cellRows; i++) {
         const row = [];
         for (let j = 0; j < cellColumns; j++) {
             row.push({
-               row: i,
-               column: j,
-               value: 0,
-               status: 'closed'
+                row: i,
+                column: j,
+                value: 0,
+                status: 'closed'
             });
         }
         _cells.push(row);
     }
-    const [cells, setCells] = useState(_cells)
+
+    const [cells, setCells] = useState(_cells);
 
     return (
         <div className="App">
@@ -29,14 +30,16 @@ function App() {
                 <Header />
                 <ControlPanel />
                 <Bombs
-                    cells = {cells}
+                    cells={cells}
                     cellClicked={(v) => {
                         const _cells = [...cells];
-                        _cells[v.rows][v.column] = v;
+                        _cells[v.row][v.column] = v;
                         setCells(_cells);
                     }}
-                    />
+                />
             </div>
         </div>
-    )
+    );
 }
+
+export default App;
