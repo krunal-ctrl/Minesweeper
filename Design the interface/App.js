@@ -15,7 +15,7 @@ function App() {
                         <div className="Status-Bar">
                             <div className="Flag-Counter"><img src={bombIcon} alt="bomb icon" width="47"
                                                                height="60"/>&nbsp;<span>10</span></div>
-                            <div className="Reset"><img src={resetIcon} alt="reset" width="41" height="40"/></div>
+                            <div className="Reset">🙂</div>
                             <div className="Timer"><span>0:00</span></div>
                         </div>
                     </div>
